@@ -83,7 +83,7 @@
 &kp A          &kp R        &kp S            &kp T              &kp G             /* | */        &kp M          &kp N              &kp E            &kp I             &kp O
 &kp Y          &kp X        &kp C            &kp D              &kp V             /* | */        &kp K          &kp H              &kp COMMA        &kp DOT           &kp SLASH
                             /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-                                &kp BSPC          &to NAV       &kp SPACE         /* | */        &lt NUM TAB    &lt ENTER ALTGR      &kp BSPC
+                                &kp BSPC          &to NAV       &kp SPACE         /* | */        &lt NUM TAB    &mt RALT RETURN      &kp BSPC
             >;
         };
 
