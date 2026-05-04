@@ -31,45 +31,45 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp F     &kp P    &kp B      &kp J      &kp L                &kp U        &kp Z    &kp SEMI
-&kp A  &kp R  &kp S     &kp T    &kp G      &kp M      &kp N                &mt LC(A) E  &kp I    &kp O
-&kp Y  &kp X  &kp C     &kp D    &kp V      &kp K      &kp H                &kp COMMA    &kp DOT  &kp SLASH
+&kp Q  &kp W  &kp F     &kp P    &kp B      &kp J      &kp L    &kp U        &kp Z    &kp SEMI
+&kp A  &kp R  &kp S     &kp T    &kp G      &kp M      &kp N    &mt LC(A) E  &kp I    &kp O
+&kp Y  &kp X  &kp C     &kp D    &kp V      &kp K      &kp H    &kp COMMA    &kp DOT  &kp SLASH
               &kp LGUI  &to NAV  &kp SPACE  &kp ENTER  &mt RALT LEFT_SHIFT  &kp BSPC
             >;
         };
 
         navigation_layer {
             bindings = <
-&kp ESC        &kp AT     &kp HASH           &kp DOLLAR       &kp PERCENT   &kp CARET            &kp AMPERSAND         &kp ASTERISK           &kp SEMICOLON      &studio_unlock
-&kp TAB        &sk EQUAL  &sk SINGLE_QUOTE   &sk SQT          &kp LC(D)     &mt SLASH BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE           &none
-&kp LC(TILDE)  &kp LC(X)  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp QUESTION  &kp LEFT_BRACKET     &kt LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &none
-                          &trans             &to SYM          &to DEF       &trans               &to DEF               &kp BSPC
+&kp N1   &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                          &none             &to SYM          &to DEF       &none             &to DEF               &kp BSPC
             >;
         };
 
         symbols_layer {
             bindings = <
-&kp EXCL   &kp AT     &kp HASH    &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp STAR   &kp LPAR   &kp RPAR
-&kp EQUAL  &kp PLUS   &kp MINUS   &kp UNDER   &kp LBKT     &kp RBKT   &sk LSHIFT     &sk LCTRL  &sk LALT   &kp SQT
-&kp PIPE   &kp GRAVE  &caps_word  &kp LPAR    &kp LBRC     &kp RBRC   &kp RPAR       &trans     &kp TILDE  &kp BACKSLASH
-                      &trans      &to NUM     &to NAV      &trans     &to DEF        &trans
+&kp N2   &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                      &none      &to NUM     &to NAV      &none     &to DEF        &none
             >;
         };
 
         numbers-fn_layer {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &kp F22  &kp MINUS  &kp N7   &kp N8  &kp N9  &kp BSPC
+&kp N3   &kp F2   &kp F3   &kp F4   &kp F22  &kp MINUS  &kp N7   &kp N8  &kp N9  &kp BSPC
 &kp F5  &kp F6   &kp F7   &kp F8   &kp F23  &kp PLUS   &kp N4   &kp N5  &kp N6  &kp ENTER
 &kp F9  &kp F10  &kp F11  &kp F12  &kp F24  &kp EQUAL  &kp N1   &kp N2  &kp N3  &kp SLASH
-                 &trans   &to SYS  &to SYM  &trans     &to DEF  &kp N0
+                 &none   &to SYS  &to SYM  &none     &to DEF  &kp N0
             >;
         };
 
         system-fun_layer {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &none         &studio_unlock     &kp K_VOL_UP  &none       &kp F20           &none        &none
-&bt BT_CLR    &bt BT_CLR_ALL  &none         &none         &ext_power EP_TOG  &kp K_MUTE    &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT   &none
-&sys_reset    &bootloader     &soft_off     &out OUT_USB  &out OUT_BLE       &kp K_VOL_DN  &none       &none             &bootloader  &sys_reset
+&kp N4   &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
                               &none         &to DEF       &to NUM            &none         &to DEF     &none
             >;
         };
