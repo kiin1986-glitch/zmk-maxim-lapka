@@ -28,19 +28,19 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp F          &kp P                 &kp B  &kp J      &kp L                   &kp U          &kp Z    &kp SEMI
-&kp A  &kp R  &kp S          &kp T                 &kp G  &kp M      &kp N                   &mt LC(A) E    &kp I    &kp O
-&kp Y  &kp X  &kp C          &kp D                 &kp V  &kp K      &kp H                   &kp COMMA      &kp DOT  &kp SLASH
-              &kp BACKSPACE  &mt LEFT_SHIFT ENTER  &to 1  &kp ENTER  &mt LEFT_CONTROL SPACE  &mt LGUI LGUI
+&kp Q  &kp W  &kp F             &kp P                 &kp B  &kp J      &kp L                   &kp U              &kp Z    &kp SEMICOLON
+&kp A  &kp R  &mt LEFT_SHIFT S  &kp T                 &kp G  &kp M      &kp N                   &mt RIGHT_SHIFT E  &kp I    &kp O
+&kp Y  &kp X  &kp C             &kp D                 &kp V  &kp K      &kp H                   &kp COMMA          &kp DOT  &kp SLASH
+              &kp BACKSPACE     &mt LEFT_SHIFT ENTER  &to 1  &kp ENTER  &mt LEFT_CONTROL SPACE  &mt LGUI LGUI
             >;
         };
 
         navigation_layer {
             bindings = <
-&kp N1  &none  &none  &none    &none    &none  &none    &none     &none  &none
-&none   &none  &none  &none    &none    &none  &none    &none     &none  &none
-&none   &none  &none  &none    &none    &none  &none    &none     &none  &none
-               &none  &to SYM  &to DEF  &none  &to DEF  &kp BSPC
+&kp N1     &kp AT_SIGN    &kp HASH               &kp DOLLAR      &kp PERCENT  &kp CARET         &kp AMPERSAND         &kp ASTRK              &kp SEMICOLON      &kp BSPC
+&kp TAB    &kp EQUAL      &kp LA(RIGHT_BRACKET)  &none           &none        &kp BACKSLASH     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE           &kp ENTER
+&kp TILDE  &kp RA(RC(S))  &kp DOUBLE_QUOTES      &none           &none        &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &mt RC(A) RC(C)
+                          &kp END                &kp LEFT_SHIFT  &to 2        &kp RIGHT_ALT     &to DEF               &kp BSPC
             >;
         };
 
