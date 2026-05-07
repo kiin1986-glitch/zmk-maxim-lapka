@@ -28,46 +28,46 @@
 
         default_layer {
             bindings = <
-&kp Q                &kp W  &kp F             &kp P      &kp B       &kp J       &kp L        &mt LEFT_BRACKET U  &kp Z    &mt DOLLAR QUESTION
-&mt DOUBLE_QUOTES A  &kp R  &mt LEFT_SHIFT S  &kp T      &kp G       &kp M       &kp N        &mt RIGHT_SHIFT E   &kp I    &mt SEMICOLON O
-&kp Y                &kp X  &kp C             &kp D      &kp V       &kp K       &kp H        &kp COMMA           &kp DOT  &mt BACKSLASH SLASH
-                            &kp BACKSPACE     &lt 1 TAB  &kp ESCAPE  &kp DELETE  &lt 3 SPACE  &lt 4 ENTER
+&kp Q                &kp W             &kp F            &kp P      &kp B       &kp J       &kp L        &mt LEFT_BRACKET U  &kp Z    &mt DOLLAR QUESTION
+&mt DOUBLE_QUOTES A  &mt LEFT_SHIFT R  &mt RA(RC(S)) S  &kp T      &kp G       &kp M       &kp N        &mt RIGHT_SHIFT E   &kp I    &mt SEMICOLON O
+&kp Y                &kp X             &kp C            &kp D      &kp V       &kp K       &kp H        &kp COMMA           &kp DOT  &mt UNDERSCORE MINUS
+                                       &kp BACKSPACE    &lt 1 TAB  &kp ESCAPE  &kp DELETE  &lt 3 SPACE  &lt 4 ENTER
             >;
         };
 
         navigation_layer {
             bindings = <
-&kp QUESTION  &kp AT_SIGN     &kp UP_ARROW       &kp DOLLAR       &kp PERCENT      &mt TILDE CARET      &kp AMPERSAND         &kp ASTRK              &kp SEMICOLON      &kp BSPC
-&kp TAB       &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp END          &mt BACKSLASH SLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE           &kp ENTER
-&kp SQT       &kp RA(RC(S))   &kp DOUBLE_QUOTES  &kp HASH         &kp EXCLAMATION  &kp LEFT_BRACKET     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &mt RC(A) RC(C)
-                              &kp END            &kp LEFT_SHIFT   &to 2            &kp RIGHT_ALT        &to DEF               &kp BSPC
+&kp TAB   &kp RS(NUMBER_2)  &kp UP_ARROW       &kp DOLLAR       &kp PERCENT      &mt TILDE CARET      &kp LS(N7)            &kp LS(N8)             &kp SEMICOLON      &kp BSPC
+&kp HOME  &kp LEFT_ARROW    &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp END          &mt BACKSLASH SLASH  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp PIPE           &kp ENTER
+&kp SQT   &kp RA(RC(S))     &kp DOUBLE_QUOTES  &kp HASH         &kp EXCLAMATION  &kp LEFT_BRACKET     &kp LS(N9)            &kp LS(N0)             &kp RIGHT_BRACKET  &mt RC(A) RC(C)
+                            &kp END            &none            &to 2            &kp RIGHT_ALT        &to DEF               &kp BSPC
             >;
         };
 
         symbols_layer {
             bindings = <
-&kp N2  &none  &none  &none    &none    &none  &none    &none  &none  &none
-&none   &none  &none  &none    &none    &none  &none    &none  &none  &none
-&none   &none  &none  &none    &none    &none  &none    &none  &none  &none
-               &none  &to NUM  &to NAV  &none  &to DEF  &none
+&kp N2  &none  &none  &none  &none    &none  &none    &none  &none  &none
+&none   &none  &none  &none  &none    &none  &none    &none  &none  &none
+&none   &none  &none  &none  &none    &none  &none    &none  &none  &none
+               &none  &none  &to NAV  &none  &to DEF  &none
             >;
         };
 
         numbers-fn_layer {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &kp F22  &kp MINUS  &kp N7   &kp N8  &kp N9  &kp BSPC
-&kp F5  &kp F6   &kp F7   &kp F8   &kp F23  &kp PLUS   &kp N4   &kp N5  &kp N6  &kp ENTER
-&kp F9  &kp F10  &kp F11  &kp F12  &kp F24  &kp EQUAL  &kp N1   &kp N2  &kp N3  &kp SLASH
-                 &none    &to SYS  &to SYM  &none      &to DEF  &kp N0
+&kp F1  &kp F2   &kp F3   &kp F4   &kp F22  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp BSPC
+&kp F5  &kp F6   &kp F7   &kp F8   &kp F23  &kp PLUS   &kp N4  &kp N5  &kp N6  &kp ENTER
+&kp F9  &kp F10  &kp F11  &kp F12  &kp F24  &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp SLASH
+                 &none    &none    &to SYM  &none      &none   &kp N0
             >;
         };
 
         system-fun_layer {
             bindings = <
-&kp N4  &none  &none  &none    &studio_unlock  &studio_unlock  &none    &none  &none  &none
-&none   &none  &none  &none    &none           &none           &none    &none  &none  &none
-&none   &none  &none  &none    &none           &none           &none    &none  &none  &none
-               &none  &to DEF  &to NUM         &none           &to DEF  &none
+&kp N4  &none  &none  &none  &studio_unlock  &studio_unlock  &none  &none  &none  &none
+&none   &none  &none  &none  &none           &none           &none  &none  &none  &none
+&none   &none  &none  &none  &none           &none           &none  &none  &none  &none
+               &none  &none  &none           &none           &none  &none
             >;
         };
     };
