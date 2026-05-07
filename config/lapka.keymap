@@ -28,19 +28,19 @@
 
         default_layer {
             bindings = <
-&kp Q                &kp W             &kp F            &kp P      &kp B       &kp J       &kp L        &mt LEFT_BRACKET U  &kp Z    &mt DOLLAR QUESTION
+&kp Q                &kp W             &kp F            &kp P      &kp B       &kp J       &kp L        &mt LEFT_BRACKET U  &kp Z    &mt SLASH QUESTION
 &mt DOUBLE_QUOTES A  &mt LEFT_SHIFT R  &mt RA(RC(S)) S  &kp T      &kp G       &kp M       &kp N        &mt RIGHT_SHIFT E   &kp I    &mt SEMICOLON O
-&kp Y                &kp X             &kp C            &kp D      &kp V       &kp K       &kp H        &kp COMMA           &kp DOT  &mt UNDERSCORE MINUS
+&kp Y                &kp X             &kp C            &kp D      &kp V       &kp K       &kp H        &kp COMMA           &kp DOT  &mt AMPERSAND ASTERISK
                                        &kp BACKSPACE    &lt 1 TAB  &kp ESCAPE  &kp DELETE  &lt 3 SPACE  &lt 4 ENTER
             >;
         };
 
         navigation_layer {
             bindings = <
-&kp TAB   &kp RS(NUMBER_2)  &kp UP_ARROW       &kp DOLLAR       &kp PERCENT      &mt TILDE CARET      &kp LS(N7)            &kp LS(N8)             &kp SEMICOLON      &kp BSPC
-&kp HOME  &kp LEFT_ARROW    &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp END          &mt BACKSLASH SLASH  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp PIPE           &kp ENTER
-&kp SQT   &kp RA(RC(S))     &kp DOUBLE_QUOTES  &kp HASH         &kp EXCLAMATION  &kp LEFT_BRACKET     &kp LS(N9)            &kp LS(N0)             &kp RIGHT_BRACKET  &mt RC(A) RC(C)
-                            &kp END            &none            &to 2            &kp RIGHT_ALT        &to DEF               &kp BSPC
+&kp TAB   &kp RS(NUMBER_2)  &kp UP_ARROW    &kp DOLLAR       &kp LS(NUMBER_1)  &mt RS(GRAVE) RS(NUMBER_6)  &kp LS(N7)            &kp LS(N8)             &kp SEMICOLON      &kp BSPC
+&kp HOME  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END           &mt BACKSLASH SLASH         &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp PIPE           &kp ENTER
+&kp SQT   &kp AT            &kp LS(N5)      &kp HASH         &kp LS(SLASH)     &kp LEFT_BRACKET            &kp LS(N9)            &kp LS(N0)             &kp RIGHT_BRACKET  &mt RC(A) RC(C)
+                            &kp END         &none            &to 2             &kp RIGHT_ALT               &to DEF               &kp BSPC
             >;
         };
 
