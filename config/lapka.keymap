@@ -30,8 +30,8 @@
         default_layer {
             bindings = <
 &kp Q                &kp W             &kp F                    &kp P      &kp B       &kp J       &kp L        &mt LEFT_BRACKET U  &kp Z             &mt SLASH QUESTION
-&mt DOUBLE_QUOTES A  &mt LEFT_SHIFT R  &mt RA(RC(S)) S          &kp T      &kp G       &kp M       &kp N        &mt RIGHT_SHIFT E   &kp I             &mt SEMICOLON O
-&kp Y                &kp X             &kp C                    &kp D      &kp V       &kp K       &kp H        &mt SEMI COMMA      &mt LS(SEMI) DOT  &mt AMPERSAND ASTERISK
+&mt QUOTE A          &mt LEFT_SHIFT R  &mt MINUS S              &kp T      &kp G       &kp M       &kp N        &mt RIGHT_SHIFT E   &kp I             &mt SEMICOLON O
+&kp Y                &kp X             &kp C                    &kp D      &kp V       &kp K       &kp H        &mt SEMI COMMA   &mt LS(DOT) DOT      &mt AMPERSAND LS(N0)
                                        &mt BACKSPACE BACKSPACE  &lt 1 TAB  &kp ESCAPE  &kp DELETE  &lt 2 SPACE  &lt 4 ENTER
             >;
         };
@@ -56,9 +56,9 @@
 
         numbers-fn_layer {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &kp F22  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp BSPC
-&kp F5  &kp F6   &kp F7   &kp F8   &kp F23  &kp PLUS   &kp N4  &kp N5  &kp N6  &kp ENTER
-&kp F9  &kp F10  &kp F11  &kp F12  &kp F24  &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp SLASH
+&kp F1  &kp F2   &kp F3   &kp F4   &kp F22  &kp SLASH  &kp N7  &kp N8  &kp N9  &kp BSPC
+&kp F5  &kp F6   &kp F7   &kp F8   &kp F23  &kp RBKT   &kp N4  &kp N5  &kp N6  &kp ENTER
+&kp F9  &kp F10  &kp F11  &kp F12  &kp F24  &kp LS(N0) &kp N1  &kp N2  &kp N3  &kp LS(N7)
                  &none    &none    &to SYM  &none      &none   &kp N0
             >;
         };
