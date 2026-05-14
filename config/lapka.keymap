@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-
 //  0  1  2  3  4       5  6  7  8  9
 // 10 11 12 13 14      15 16 17 18 19
 // 20 21 22 23 24      25 26 27 28 29
@@ -29,9 +28,9 @@
 
         default_layer {
             bindings = <
-&kp Q                &kp W             &kp F                    &kp P      &kp B       &kp J       &kp L        &mt LEFT_BRACKET U  &kp Z             &mt SLASH QUESTION
-&mt QUOTE A          &mt LEFT_SHIFT R  &mt MINUS S              &kp T      &kp G       &kp M       &kp N        &mt RIGHT_SHIFT E   &kp I             &mt SEMICOLON O
-&kp Y                &kp X             &kp C                    &kp D      &kp V       &kp K       &kp H        &mt SEMI COMMA   &mt LS(DOT) DOT      &mt AMPERSAND LS(N0)
+&kp Q                &kp W             &kp F                    &kp P      &kp B       &kp J       &kp L        &mt LEFT_BRACKET U  &kp Z            &mt SLASH QUESTION
+&mt DOUBLE_QUOTES A  &mt LEFT_SHIFT R  &mt MINUS S              &kp T      &kp G       &kp M       &kp N        &mt RIGHT_SHIFT E   &kp I            &mt SEMICOLON O
+&kp Y                &kp X             &kp C                    &kp D      &kp V       &kp K       &kp H        &mt SEMI COMMA      &mt LS(DOT) DOT  &mt AMPERSAND LS(N0)
                                        &mt BACKSPACE BACKSPACE  &lt 1 TAB  &kp ESCAPE  &kp DELETE  &lt 2 SPACE  &lt 4 ENTER
             >;
         };
@@ -41,7 +40,7 @@
 &kp TAB   &kp RS(NUMBER_2)  &kp UP_ARROW    &kp DOLLAR       &kp LS(NUMBER_1)  &mt RS(GRAVE) RS(NUMBER_6)  &kp RS(CARET)         &kp LS(RIGHT_BRACKET)  &none              &none
 &kp HOME  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(TAB)       &mt BACKSLASH SLASH         &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp PIPE           &kp LC(V)
 &kp SQT   &kp AT            &kp LS(N5)      &kp BACKSLASH    &kp LS(MINUS)     &kp LEFT_BRACKET            &kp LS(N9)            &kp LS(N0)             &kp RIGHT_BRACKET  &mt RC(A) RC(C)
-                            &kp BACKSPACE   &none            &none             &kp RIGHT_ALT               &to DEF               &kp ENTER
+                            &kp BACKSPACE   &none            &none             &kp RIGHT_ALT               &to 0                 &kp ENTER
             >;
         };
 
@@ -50,16 +49,16 @@
 &kp LC(Q)  &kp LC(W)  &kp LC(F)  &kp LC(P)   &none      &kp PG_UP  &kp HOME   &kp UP              &kp END         &kp LC(SEMI)
 &kp LGUI   &sk LALT   &sk LCTRL  &sk LSHIFT  &kp LC(D)  &kp PG_DN  &kp LEFT   &kp DOWN            &kp RIGHT       &kp LC(O)
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)   &none      &kp LC(K)  &kt LC(M)  &kp K_CONTEXT_MENU  &kp LC(PERIOD)  &kp LC(SLASH)
-                      &none      &none       &to NAV    &none      &to DEF    &none
+                      &none      &none       &to 1      &none      &to 0      &none
             >;
         };
 
         numbers-fn_layer {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &kp F22  &kp SLASH  &kp N7  &kp N8  &kp N9  &kp BSPC
-&kp F5  &kp F6   &kp F7   &kp F8   &kp F23  &kp RBKT   &kp N4  &kp N5  &kp N6  &kp ENTER
-&kp F9  &kp F10  &kp F11  &kp F12  &kp F24  &kp LS(N0) &kp N1  &kp N2  &kp N3  &kp LS(N7)
-                 &none    &none    &to SYM  &none      &none   &kp N0
+&kp F1  &kp F2   &kp F3   &kp F4   &kp F22  &kp SLASH   &kp N7  &kp N8  &kp N9  &kp BSPC
+&kp F5  &kp F6   &kp F7   &kp F8   &kp F23  &kp RBKT    &kp N4  &kp N5  &kp N6  &kp ENTER
+&kp F9  &kp F10  &kp F11  &kp F12  &kp F24  &kp LS(N0)  &kp N1  &kp N2  &kp N3  &kp LS(N7)
+                 &none    &none    &to 2    &none       &none   &kp N0
             >;
         };
 
